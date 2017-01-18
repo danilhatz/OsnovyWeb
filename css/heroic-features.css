@@ -1,0 +1,213 @@
+/*
+ * Start Bootstrap - Heroic Features (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+
+body {
+    padding-top: 5px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.container .jumbotron{
+    padding:0px;
+    background-color: inherit;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #000000;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #000000;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.5s;
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@media (max-width: 732px) {
+    .logo {
+        margin-top: 50px;
+        height: 400px;
+        /*background-image: url("../img/mobile_logo.jpg");*/
+        border-radius: 5px;
+        display: block;
+        max-width: 100%;
+    }
+    .about{
+        margin-top: 40px;
+        background-image: url("../img/about_us.jpg");
+        /* Full height */
+        height: 100%;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.items {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.items:hover {
+    -webkit-filter: grayscale(100%);
+}
+
+@media (min-width: 733px){
+    .logo {
+        margin-top: 50px;
+        height: 400px;
+        /*background-image: url("../img/logo.jpg");*/
+        border-radius: 5px;
+        display: block;
+        max-width: 100%;
+    }
+    .about{
+        margin-top: 70px;
+        height: 500px;
+        background-image: url("../img/about_us.jpg");
+        border-radius: 5px;
+        display: block;
+        max-width: 100%;
+    }
+}
+
+.logo >h1{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+    margin-bottom: 80px;
+
+}
+.logo >p {
+
+    margin-top: 10px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: large;
+}
+
+.about > h1{
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+}
+.about > p{
+    display: block;
+    display: -webkit-box;
+    max-width: 800px;
+    height: 300px;
+    margin: 0 auto;
+    line-height: 1.2;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: "Times New Roman", Times, serif;
+    font-size: inherit;
+    color: white;
+}
+
+h1 {
+    width: 100%;
+    color: white;
+}
+
+p {
+    width: 100%;
+}
+
+.btn-about {
+    background-color: beige;
+    border-color: beige;
+    color: black;
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-feature {
+    margin-bottom: 30px;
+}
+
+footer {
+    margin: 50px 0;
+}
