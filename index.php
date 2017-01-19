@@ -35,7 +35,7 @@
         <div class="slideshow-container">
             <div class="mySlides fade">
                 <div class="numbertext">1 / 3</div>
-                <img src="/img/logo.jpg" style="width:100%">
+                <img src="/img/index/logo.jpg" style="width:100%">
 
                 <div class="text">
                     <h1 align="center">eMeblef</h1>
@@ -54,7 +54,7 @@
             </div>
             <div class="mySlides fade">
                 <div class="numbertext">2 / 3</div>
-                <img src="/img/bed2.jpg" style="width:100%">
+                <img src="/img/index/bed2.jpg" style="width:100%">
 
                 <div class="text">
                     <h1 align="center">eMeblef</h1>
@@ -73,7 +73,7 @@
             </div>
             <div class="mySlides fade">
                 <div class="numbertext">3 / 3</div>
-                <img src="/img/sofa_3.jpg" style="width:100%">
+                <img src="/img/index/sofa_3.jpg" style="width:100%">
 
                 <div class="text">
                     <h1 align="center">eMeblef</h1>
@@ -113,7 +113,7 @@
     <div class="row text-center">
         <div class="col-md-3 col-sm-6 hero-feature">
             <div class="thumbnail">
-                <img class="items" src="img/sofa.jpg">
+                <img class="items" src="img/index/sofa.jpg">
 
                 <div class="caption">
                     <h3>Sofas</h3>
@@ -130,7 +130,7 @@
 
         <div class="col-md-3 col-sm-6 hero-feature">
             <div class="thumbnail">
-                <img class="items" src="img/bed1.jpg">
+                <img class="items" src="img/index/bed1.jpg">
 
                 <div class="caption">
                     <h3>Beds</h3>
@@ -147,7 +147,7 @@
 
         <div class="col-md-3 col-sm-6 hero-feature">
             <div class="thumbnail">
-                <img class="items" src="img/dining.jpg">
+                <img class="items" src="img/index/dining.jpg">
 
                 <div class="caption">
                     <h3>Dining Sets </h3>
@@ -164,10 +164,10 @@
 
         <div class="col-md-3 col-sm-6 hero-feature">
             <div class="thumbnail">
-                <img class="items" src="img/computer_table.jpg">
+                <img class="items" src="img/index/computer_table.jpg">
 
                 <div class="caption">
-                    <h3>Laptop Tables </h3>
+                    <h3>Tables</h3>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
