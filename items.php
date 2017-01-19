@@ -31,37 +31,22 @@
 <?php require_once "blocks/header.php" ?>
 
 <!-- Page Content -->
-<div class="container">
+<div class="container goods">
+
+
+<?php require_once "blocks/goods4.php"?>
+
+
+
+
+
+
 </div>
 </body>
 <!-- Footer -->
-<footer>
-    <div class="collapse navbar-collapse" id="footer">
-        <ul class="nav navbar-nav">
-            <li>
-                <a href="about.php">About</a>
-            </li>
-            <li>
-                <a href="items.php">Goods</a>
-            </li>
-            <li>
-                <a href="contacts.php">Contact</a>
-            </li>
-            <li>
-                <a class="basket" href="basket.php">Basket</a>
-            </li>
-        </ul>
-    </div>
-    <div class="row">
-        <div class="col-lg-12">
-            <p align="center">Copyright &copy; eMeblef 2017</p>
-        </div>
-    </div>
-</footer>
 
-</div>
-<!-- /.container -->
 
+<?php require_once "blocks/footer.php"?>
 <!-- jQuery -->
 <script src="js/jquery.js"></script>
 

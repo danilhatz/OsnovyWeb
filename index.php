@@ -27,9 +27,6 @@
 </head>
 
 <body>
-
-<!-- Navigation -->
-
 <?php require_once "blocks/header.php" ?>
 <!-- Page Content -->
 <div class="container">
@@ -57,7 +54,7 @@
             </div>
             <div class="mySlides fade">
                 <div class="numbertext">2 / 3</div>
-                <img src="/img/sofa_2.jpg" style="width:100%">
+                <img src="/img/bed2.jpg" style="width:100%">
 
                 <div class="text">
                     <h1 align="center">eMeblef</h1>
@@ -182,70 +179,20 @@
             </div>
         </div>
     </div>
+    <hr class="line">
 </div>
 
 <!-- /.row -->
 
-<hr class="line">
+
 
 <!-- Footer -->
-<footer>
-    <div class="collapse navbar-collapse" id="footer">
-        <ul class="nav navbar-nav">
-            <li>
-                <a href="about.php">About</a>
-            </li>
-            <li>
-                <a href="items.php">Goods</a>
-            </li>
-            <li>
-                <a href="contacts.php">Contact</a>
-            </li>
-            <li>
-                <a class="basket" href="basket.php">Basket</a>
-            </li>
-        </ul>
-    </div>
-    <div class="row">
-        <div class="col-lg-12">
-            <p align="center">Copyright &copy; eMeblef 2017</p>
-        </div>
-    </div>
-</footer>
-
-
-<!-- /.container -->
-
-<!-- jQuery -->
-
+<?php require_once "blocks/footer.php"?>
 
 <script src="js/jquery.js"></script>
-
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
-<script>
-    var slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-            slideIndex = 1
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        setTimeout(showSlides, 8000); // Change image every 2 seconds
-    }
-</script>
+<script src="js/slider.js"></script>
 </body>
 
 </html>

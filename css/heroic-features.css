@@ -179,7 +179,7 @@ p {
 }
 
 .line{
-    width: 1820px;
+    width: 1140px;
 }
 
 .btn-about {
@@ -197,5 +197,10 @@ p {
 
 #footer {
     /*margin: 50px 0;*/
+    margin-top: 200px;
     margin-left: 42%;
+}
+
+.container.goods{
+    margin-top: 200px;
 }
