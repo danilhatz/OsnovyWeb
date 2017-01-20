@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-
+< lang="en">
+<html>
 <head>
 
     <meta charset="utf-8">
@@ -34,19 +34,17 @@
 <div class="container goods">
 
 
-<?php require_once "blocks/goods4.php"?>
-
-
-
-
+    <?php require_once "blocks/goodstype.php" ?>
 
 
 </div>
-</body>
+
 <!-- Footer -->
 
 
 <?php require_once "blocks/footer.php"?>
+
+
 <!-- jQuery -->
 <script src="js/jquery.js"></script>
 

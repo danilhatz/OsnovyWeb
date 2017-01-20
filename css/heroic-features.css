@@ -129,7 +129,7 @@ body {
     .about{
         margin-top: 70px;
         height: 500px;
-        background-image: url("../img/about_us.jpg");
+        background-image: url("../img/about_us/about_us.jpg");
         border-radius: 5px;
         display: block;
         max-width: 100%;

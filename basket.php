@@ -46,7 +46,7 @@
                     <a href="about.php">About</a>
                 </li>
                 <li>
-                    <a href="items.php">Goods</a>
+                    <a href="category.php">Goods</a>
                 </li>
                 <li>
                     <a href="contacts.php">Contact</a>
@@ -75,7 +75,7 @@
                 <a href="about.php">About</a>
             </li>
             <li>
-                <a href="items.php">Goods</a>
+                <a href="category.php">Goods</a>
             </li>
             <li>
                 <a href="contacts.php">Contact</a>

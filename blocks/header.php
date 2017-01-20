@@ -14,18 +14,18 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li>
-                    <a href="about.php">About</a>
+                    <a href="../about.php">About</a>
                 </li>
                 <li>
-                    <a href="items.php">Goods</a>
+                    <a href="../category.php">Goods</a>
                 </li>
                 <li>
-                    <a href="contacts.php">Contact</a>
+                    <a href="../contacts.php">Contact</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav pull-right" >
                 <li>
-                    <a class="basket" href="basket.php">Basket</a>
+                    <a class="basket" href="../basket.php">Basket</a>
                 </li>
             </ul>
         </div>
