@@ -16,22 +16,19 @@
 <?php require_once "blocks/header.php";
 $items = require __DIR__ . "/goods/itemsData.php";
 $categories = require __DIR__ . '/goods/categories.php';
-$items = unserialize($_COOKIE['basket']);
-$basket = [];
-array_push($basket, $items);
-?>
+$items = unserialize($_COOKIE['basket']); ?>
 <div class="container goods">
     <div class="columns large-8">
-        <?php var_dump($basket);die; ?>
+        <?php foreach ($items as $item):?>
         <div class="thumbnail">
-            <img class="items" src="<?php echo $items['img'] ?>">
+            <img class="items" src="<?php echo$item['img']; ?>">
         </div>
     </div>
     <div class="columns large-3">
         <div class="caption">
-            <h3><?php echo $items['title'] ?></h3>
+            <h3><?php echo $item['title'] ?></h3>
 
-            <p><?php echo $items['description'] ?></p>
+            <p><?php echo $item['description'] ?></p>
 
             <p>
                 <a href="../shopingcard.php?category_id=<?php echo $categoryId ?>&item_id=<?php echo $itemId ?>&action=add"
@@ -39,6 +36,7 @@ array_push($basket, $items);
             </p>
         </div>
     </div>
+    <?php endforeach;?>
 </div>
 <?php require_once "blocks/footer.php" ?>
 </body>

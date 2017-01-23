@@ -4,38 +4,27 @@
 //$t = serialize($cok);
 //setcookie('er', $t, time() + 86400);
 //$t = unserialize($_COOKIE['er']);
-//var_dump($t);
+//var_dump($t[1]);
 
-//unset($_COOKIE["basket"]);
+
 $items = require __DIR__ . "/goods/itemsData.php";
 $categories = require __DIR__ . '/goods/categories.php';
 $categoryId = intval($_GET["category_id"]);
 $itemId = intval($_GET["item_id"]);
 $itemInfo = $items[$categoryId][$itemId];
-//$cookie[] = unserialize($_COOKIE[]);
-if ($cookie === [null]): {
-//    if ($_GET["action"] === "add"): {
+$checkCookie = unserialize($_COOKIE['basket']);
+    if ($checkCookie == false || $checkCookie == [null]):{
+        $cookie = [];
         array_push($cookie, $itemInfo);
-
-//        var_dump($cookie);
-        setcookie('basket', serialize($cookie), time() + 86400);}
-//    endif;
-
-//    };
-//        endif;}
-//    elseif ($_GET["action"] === "remove"): {
-//
-//    }
-    elseif($cookie != [null]): {
-//        var_dump($cookie);
-        $t = unserialize($cookie);
-        var_dump($t);
-        $cok = unserialize($cookie);
-        var_dump($cok);
-            array_push($cok, $itemInfo);
-    var_dump($cok);
-            setcookie('basket', serialize($cookie), time() + 86400);
+        $serCookie = serialize($cookie);
+        setcookie('basket', $serCookie, time()+86400);
     };
-        endif;
-echo $_COOKIE['basket'];
-//header("Location: /basket.php");
+    else:
+    {
+        array_push($checkCookie, $itemInfo);
+        $serCookie = serialize($checkCookie);
+        setcookie('basket', $serCookie, time()+86400);
+    }
+    endif;
+header("Location: /basket.php");
+//echo $_COOKIE['basket'];
