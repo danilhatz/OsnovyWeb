@@ -2,28 +2,14 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>eMeblef: about us</title>
-
-    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
     <link href="css/heroic-features.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 
 <body>
@@ -40,20 +26,13 @@
                 If you have a large space, you have the luxury of adding a number of the latest furniture designs to the room, without overcrowding it, of course. For smaller rooms, it’s best that you look for multifunctional furniture designs that let you do more without taking up a lot of room. Once you identify what your room is going to be used for and what pieces you would like to furnish it with, you can proceed to find the right pieces online.
             </p>
             <a type="button" class="btn btn-about" href="contacts.php">Our contacts</a>
-            </td>
         </div>
     </header>
 </div>
-<!-- Footer -->
 <?php require_once "blocks/footer.php"?>
 
-
-
 <script src="js/jquery.js"></script>
-<!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
-
 </body>
-
 </html>
 

@@ -11,7 +11,7 @@ $categories = require __DIR__ . '/../goods/categories.php';
             <div class="caption">
                 <h3><?php echo $category['title']?></h3>
                 <p>
-                    <a href="../goods/items.php?category_id=<?php echo $categoryId?>" class="btn btn-primary"><?php echo $category['btnTitle']?></a>
+                    <a href="/goods/items.php?category_id=<?php echo $categoryId?>" class="btn btn-primary"><?php echo $category['btnTitle']?></a>
                 </p>
             </div>
         </div>

@@ -17,8 +17,6 @@
                 'img' => '../img/sofas/sofa1.jpg',
                 'link' => 'sofa1.php'
             ],
-
-        //beds
             2 => [
                 'title' => 'Robert Three Seater Recliner Sofa',
                 'shortDescription' => 'Poised and plush. With a generous cushioned body and a classic shape, the Robert recliner
@@ -34,7 +32,6 @@
                               Indoor use only',
                 'img' => '../img/sofas/sofa2.jpg',
             ],
-        //dining
             3 => [
                 'title' => 'Janet Loveseat',
                 'shortDescription' => 'The luscious Janet loveseat is the perfect place to cosy up or unwind.
@@ -53,7 +50,6 @@
                               Any assembly or installation required will be done by the UL team at the time of delivery',
                 'img' => '../img/sofas/sofa3.jpg'
             ],
-        //tables
             4 => [
                 "title" => "Lillian Loveseat",
                 'shortDescription' => 'The Lillian loveseat is delightfully playful. With its microfibre cushions
@@ -74,6 +70,7 @@
             ],
         ],
 
+        //beds
         2 => [
             6 => [
                 "title" => "Stanhope Upholstered Storage Bed",
@@ -132,6 +129,7 @@
             ],
         ],
 
+         //dining
         3 => [
             12 => ["title" => "", "description" => "", "img" => ""],
             13 => ["title" => "", "description" => "", "img" => ""],
@@ -140,6 +138,7 @@
 
         ],
 
+        //tables
         4 => [
             18 => ["title" => "", "description" => "", "img" => ""],
             19 => ["title" => "", "description" => "", "img" => ""],

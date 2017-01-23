@@ -2,16 +2,16 @@
     <div class="collapse navbar-collapse" id="footer">
         <ul class="nav navbar-nav">
             <li>
-                <a href="about.php">About</a>
+                <a href="../about.php">About</a>
             </li>
             <li>
-                <a href="items.php">Goods</a>
+                <a href="../category.php">Goods</a>
             </li>
             <li>
-                <a href="contacts.php">Contact</a>
+                <a href="../contacts.php">Contact</a>
             </li>
             <li>
-                <a class="basket" href="basket.php">Basket</a>
+                <a class="basket" href="../basket.php">Basket</a>
             </li>
         </ul>
     </div>
