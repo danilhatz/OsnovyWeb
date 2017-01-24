@@ -1,12 +1,5 @@
 <?php
 
-//$cok = [1 => 3, 2 => 5];
-//$t = serialize($cok);
-//setcookie('er', $t, time() + 86400);
-//$t = unserialize($_COOKIE['er']);
-//var_dump($t[1]);
-
-
 $items = require __DIR__ . "/goods/itemsData.php";
 $categories = require __DIR__ . '/goods/categories.php';
 $categoryId = intval($_GET["category_id"]);
@@ -27,4 +20,3 @@ $checkCookie = unserialize($_COOKIE['basket']);
     }
     endif;
 header("Location: /basket.php");
-//echo $_COOKIE['basket'];

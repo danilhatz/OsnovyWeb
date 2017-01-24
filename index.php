@@ -90,74 +90,30 @@
         </div>
     </div>
     <div class="row text-center">
-        <div class="col-md-3 col-sm-6 hero-feature">
-            <div class="thumbnail">
-                <img class="items" src="img/index/sofa.jpg">
+        <?php $categories = require __DIR__ . '/goods/categories.php'; ?>
+        <?php foreach ($categories as $category): ?>
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img class="items" src="<?php echo $category['img'] ?>">
 
-                <div class="caption">
-                    <h3>Sofas</h3>
+                    <div class="caption">
+                        <h3><?php echo $category['title'] ?></h3>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
-                    <p>
-                        <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More
-                            Info</a>
-                    </p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More
+                                Info</a>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-3 col-sm-6 hero-feature">
-            <div class="thumbnail">
-                <img class="items" src="img/index/bed1.jpg">
-
-                <div class="caption">
-                    <h3>Beds</h3>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
-                    <p>
-                        <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More
-                            Info</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6 hero-feature">
-            <div class="thumbnail">
-                <img class="items" src="img/index/dining.jpg">
-
-                <div class="caption">
-                    <h3>Dining Sets </h3>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
-                    <p>
-                        <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More
-                            Info</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6 hero-feature">
-            <div class="thumbnail">
-                <img class="items" src="img/index/computer_table.jpg">
-
-                <div class="caption">
-                    <h3>Tables</h3>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
-                    <p>
-                        <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More
-                            Info</a>
-                    </p>
-                </div>
-            </div>
-        </div>
+        <?php endforeach ?>
     </div>
-    <hr class="line">
 </div>
+<!--<hr class="line">-->
 <?php require_once "blocks/footer.php" ?>
+
 
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>

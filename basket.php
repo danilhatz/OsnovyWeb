@@ -23,21 +23,36 @@ $items = unserialize($_COOKIE['basket']); ?>
         <div class="thumbnail">
             <img class="items" src="<?php echo$item['img']; ?>">
         </div>
+        <h3><?php echo $item['title'] ?></h3>
+
+        <p><?php echo $item['description'] ?></p>
+
+        <p>
+            <a href="../shopingcard.php?category_id=<?php echo $categoryId ?>&item_id=<?php echo $itemId ?>&action=add"
+               class="btn btn-primary">Delete from basket</a>
     </div>
     <div class="columns large-3">
         <div class="caption">
-            <h3><?php echo $item['title'] ?></h3>
-
-            <p><?php echo $item['description'] ?></p>
-
-            <p>
-                <a href="../shopingcard.php?category_id=<?php echo $categoryId ?>&item_id=<?php echo $itemId ?>&action=add"
-                   class="btn btn-primary">Delete from basket</a>
-            </p>
         </div>
     </div>
     <?php endforeach;?>
+   <div class="container checkout">
+       <p>Checkout</p>
+    <form>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname">
+        <label for="fname">Last Name</label>
+        <input type="text" id="fname" name="fname">
+        <label for="fname">Your phone number</label>
+        <input type="text" id="fname" name="fname">
+        <label for="fname">Your email address</label>
+        <input type="text" id="fname" name="fname">
+        <a href="../shopingcard.php?category_id="
+           class="btn btn-primary">Checkout</a>
+    </form>
+       </div>
 </div>
+
 <?php require_once "blocks/footer.php" ?>
 </body>
 
