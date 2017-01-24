@@ -15,74 +15,14 @@
 <body>
 <?php require_once "blocks/header.php" ?>
 <div class="container">
-    <header class="jumbotron hero-spacer">
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="/img/index/logo.jpg" style="width:100%">
+    <?php require_once "blocks/slider.php"?>
 
-                <div class="text">
-                    <h1 align="center">eMeblef</h1>
-
-                    <p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; eMeblef is a wholesale brand, focused
-                        on
-                        creating special statement pieces
-                        for designers and boutiques. Our pieces are designed<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by
-                        us and distinguished by the use of unusual materials,
-                        proportion and thoughtful design.<br>
-                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbspWe love what we do and hope you enjoy exploring our
-                        collection in more detail.
-                    </p>
-                    <a type="button" class="btn btn-about" href="about.php">About us</a>
-                </div>
-            </div>
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="/img/index/bed2.jpg" style="width:100%">
-
-                <div class="text">
-                    <h1 align="center">eMeblef</h1>
-
-                    <p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; eMeblef is a wholesale brand, focused
-                        on
-                        creating special statement pieces
-                        for designers and boutiques. Our pieces are designed<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by
-                        us and distinguished by the use of unusual materials,
-                        proportion and thoughtful design.<br>
-                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbspWe love what we do and hope you enjoy exploring our
-                        collection in more detail.
-                    </p>
-                    <a type="button" class="btn btn-about" href="about.php">About us</a>
-                </div>
-            </div>
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="/img/index/sofa_3.jpg" style="width:100%">
-
-                <div class="text">
-                    <h1 align="center">eMeblef</h1>
-
-                    <p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; eMeblef is a wholesale brand, focused
-                        on
-                        creating special statement pieces
-                        for designers and boutiques. Our pieces are designed<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by
-                        us and distinguished by the use of unusual materials,
-                        proportion and thoughtful design.<br>
-                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbspWe love what we do and hope you enjoy exploring our
-                        collection in more detail.
-                    </p>
-                    <a type="button" class="btn btn-about" href="about.php">About us</a>
-                </div>
-            </div>
-        </div>
-        <br>
-
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-    </header>
+<!--        <div style="text-align:center">-->
+<!--            <span class="dot" onclick="currentSlide(1)"></span>-->
+<!--            <span class="dot" onclick="currentSlide(2)"></span>-->
+<!--            <span class="dot" onclick="currentSlide(3)"></span>-->
+<!--        </div>-->
+<!--    </header>-->
     <hr>
     <div class="row">
         <div class="col-lg-12">
@@ -117,7 +57,7 @@
 
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/slider.js"></script>
+
 </body>
 
 </html>
