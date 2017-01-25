@@ -31,6 +31,7 @@ return [
         'img' => '../../img/index/computer_table.jpg',
         'btnTitle' => 'Select your table!',
         'description' => 'Table is an item of furniture with a flat top and one or more legs, used as a surface for
-        working at or on which to place things. '
+        working at or on which to place things. Some common types of table are the dining room table, which is
+        used for seated persons to eat meals.'
     ]
 ];

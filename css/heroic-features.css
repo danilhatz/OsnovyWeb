@@ -1,13 +1,9 @@
-/*
- * Start Bootstrap - Heroic Features (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
-
-
 body {
     padding-top: 5px;
 }
+
+/*index page*/
+
 
 .container {
     padding:0;
@@ -17,6 +13,9 @@ body {
 .container >img{
     border-radius: 8px;
 }
+
+
+/*index page -> slider*/
 .slideshow-container {
     max-width: 900px;
     position: relative;
@@ -43,7 +42,6 @@ body {
     font-family: "Times New Roman", Times, serif;
 }
 
-/* Fading animation */
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 0.5s;
@@ -51,37 +49,33 @@ body {
     animation-duration: 0.5s;
 }
 
+/*index page -> items blocks*/
+
+.col-md-3.col-sm-6.hero-feature.index .thumbnail .caption{
+    height: 220px;
+}
+
+.col-md-3.col-sm-6.hero-feature.index .thumbnail .caption >h3{
+    font-family: "Times New Roman", Times, serif;
+}
+
+.col-md-3.col-sm-6.hero-feature.index .thumbnail .caption >p{
+    font-size: 12px;
+    height: 95px;
+}
+
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
 }
 
-@media (max-width: 600px) {
-    .logo {
-        margin-top: 50px;
-        height: 400px;
-        border-radius: 5px;
-        display: block;
-        max-width: 100%;
-    }
-    .about{
+
+.about{
         margin-top: 40px;
         background-image: url("../img/about_us/about_us.jpg");
         height: 100%;
         background-size: cover;
         font-size: 8px;
-    }
-}
-
-.items {
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
-}
-
-.items:hover {
-    -webkit-filter: grayscale(100%);
 }
 
 @media (min-width: 601px){
@@ -93,31 +87,22 @@ body {
         max-width: 100%;
     }
     .about{
-        margin-top: 70px;
+        /*margin-top: 70px;*/
         height: 500px;
         background-image: url("../img/about_us/about_us.jpg");
         border-radius: 5px;
         display: block;
         max-width: 100%;
     }
-}
-
-.logo >h1{
-    font-family: "Times New Roman", Times, serif;
-    font-size: 40px;
-    margin-bottom: 80px;
-
-}
-.logo >p {
-
-    margin-top: 10px;
-    font-family: "Times New Roman", Times, serif;
-    font-size: large;
+    .about > h1{
+        padding-top: 200px
+        font-family: "Times New Roman", Times, serif;
+        color: white;
+    }
 }
 
 .about > h1{
-    font-family: "Times New Roman", Times, serif;
-    color: white;
+
 }
 .about > p{
     display: block;
@@ -134,10 +119,10 @@ body {
     color: white;
 }
 
-h1 {
-    width: 100%;
-    color: white;
-}
+/*h1 {*/
+    /*width: 100%;*/
+    /*color: white;*/
+/*}*/
 
 p {
     width: 100%;
@@ -159,17 +144,7 @@ p {
 #footer {
     margin-left: 41%;
 }
-.col-md-3.col-sm-6.hero-feature.index .thumbnail .caption{
-    height: 200px;
-}
 
-.col-md-3.col-sm-6.hero-feature.index .thumbnail .caption >h3{
-    font-family: "Times New Roman", Times, serif;
-}
-
-.col-md-3.col-sm-6.hero-feature.index .thumbnail .caption >p{
-    font-size: 12px;
-}
 
 .container.goods{
     margin-top: 200px;
