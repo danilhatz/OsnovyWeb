@@ -32,11 +32,6 @@ body {
  {
     opacity: 1;}
 
-/*.mySlides.fade> img{*/
-    /*border-radius: 8px;*/
-/*}*/
-
-/* Caption text */
 .text {
     color: #000000;
     font-size: 15px;
@@ -65,7 +60,6 @@ body {
     .logo {
         margin-top: 50px;
         height: 400px;
-        /*background-image: url("../img/mobile_logo.jpg");*/
         border-radius: 5px;
         display: block;
         max-width: 100%;
@@ -73,11 +67,7 @@ body {
     .about{
         margin-top: 40px;
         background-image: url("../img/about_us/about_us.jpg");
-        /* Full height */
         height: 100%;
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
         background-size: cover;
         font-size: 8px;
     }
@@ -136,7 +126,6 @@ body {
     height: 300px;
     margin: 0 auto;
     line-height: 1.2;
-    /*-webkit-line-clamp: 3;*/
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -170,15 +159,15 @@ p {
 #footer {
     margin-left: 41%;
 }
-.col-md-3.col-sm-6.hero-feature .thumbnail .caption{
+.col-md-3.col-sm-6.hero-feature.index .thumbnail .caption{
     height: 200px;
 }
 
-.col-md-3.col-sm-6.hero-feature .thumbnail .caption >h3{
+.col-md-3.col-sm-6.hero-feature.index .thumbnail .caption >h3{
     font-family: "Times New Roman", Times, serif;
 }
 
-.col-md-3.col-sm-6.hero-feature .thumbnail .caption >p{
+.col-md-3.col-sm-6.hero-feature.index .thumbnail .caption >p{
     font-size: 12px;
 }
 

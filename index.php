@@ -25,7 +25,7 @@
     <div class="row text-center">
         <?php $categories = require __DIR__ . '/goods/categories.php'; ?>
         <?php foreach ($categories as $categoryId => $category): ?>
-            <div class="col-md-3 col-sm-6 hero-feature">
+            <div class="col-md-3 col-sm-6 hero-feature index">
                 <div class="thumbnail">
                     <img class="items" src="<?php echo $category['img'] ?>">
                     <div class="caption">
