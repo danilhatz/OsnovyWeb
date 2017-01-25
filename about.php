@@ -15,7 +15,7 @@
 <body>
 <?php require_once "blocks/header.php" ?>
 <div class="container">
-    <header class="jumbotron hero-spacer">
+<!--    <header class="jumbotron hero-spacer">-->
         <div class="about">
             <h1 align="center">About us</h1>
             <p>&nbsp;&nbsp;&nbsp;&nbsp; eMebel offers a unique selection of stylish, contemporary, and chic furniture online. Our online furniture range includes sofas, beds, dining tables, TV units, wardrobes, dressing tables, and lots more. All our wooden furniture designs are available online at emebel.com.ua On our portal, you can browse as many furniture designs across categories as you like, sort and filter, compare options, easily select and buy the ones you like, and stay updated about new and contemporary designs.
