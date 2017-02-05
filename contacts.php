@@ -16,13 +16,21 @@
 <?php require_once "blocks/header.php" ?>
 
 <div class="container">
-        <style>
+<p class="contacts-info">
+    Our store:
+    </p>
+
+           <style>
             #map {
                 height: 400px;
                 width: 100%;
             }
         </style>
-    <h3>My Google Maps Demo</h3>
+    <h3>
+        <p>You can found our store in Budunok Mebelin near metro station Dryzbi Narodov
+            <p>Our phone number: +380639517721
+            <p>Our address: Druzhby Narodiv Blvd, 23\n
+        </p></h3>
     <div id="map"></div>
     <script>
         function initMap() {
