@@ -16,8 +16,30 @@
 <?php require_once "blocks/header.php" ?>
 
 <div class="container">
-
-
+        <style>
+            #map {
+                height: 400px;
+                width: 100%;
+            }
+        </style>
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            var kiev = {lat: 50.417975, lng: 30.542892};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 17,
+                center: kiev
+            });
+            var marker = new google.maps.Marker({
+                position: kiev,
+                map: map
+            });
+        }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDov4skf_9z2qRDn8v4UxICg0sLS1BQ4ho&callback=initMap">
+    </script>
 
 </div>
 <?php require_once "blocks/footer.php"?>
