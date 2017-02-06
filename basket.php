@@ -23,7 +23,7 @@ $items = unserialize($_COOKIE['basket']); ?>
         <div class="thumbnail">
             <img class="items" src="<?php echo $item['img']; ?>">
         </div>
-        <h3><?php echo $item['title'] ?></h3>
+        <p><?php echo $item['title'] ?></p>
 
         <p><?php echo $item['price'] ?></p>
 
@@ -40,19 +40,19 @@ $items = unserialize($_COOKIE['basket']); ?>
             <a href="shopingcard.php?action=delete"
                class="btn btn-primary delete">Delete all items from basket</a>
 
-            <h3>Checkout</h3>
+            <h3 align="center">Checkout</h3>
 
             <form method="POST" action="checkout.php">
-                <label> First Name
+                <label> First Name:
                     <input type="text" name="first-name"/>
                 </label>
-                <label> Last Name
+                <label> Last Name:
                     <input type="text" name="last-name"/>
                 </label>
-                <label> Phone number
+                <label> Phone number:
                     <input type="text" name="phone-number"/>
                 </label>
-                <label> Email address
+                <label> Email address:
                     <input type="text" name="email"/>
                 </label>
                 <input type="submit" name="submit" value="Checkout" class="btn btn-primary checkout"/>

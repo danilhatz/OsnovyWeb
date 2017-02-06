@@ -161,7 +161,7 @@ p {
 }
 
 .contacts-info {
-    margin-top: 50px;
+    margin-top: 170px;
     text-align: center;
 }
 
@@ -193,4 +193,16 @@ p {
 
 .empty-basket-footer{
     margin-top: 410px;
+}
+
+.btn.btn-primary.delete{
+    margin-left: 42%;
+}
+
+.btn.btn-primary.checkout{
+    margin-left: 47%;
+    margin-top: 1%;
+}
+.contacts-footer{
+    margin-top: 100px;
 }

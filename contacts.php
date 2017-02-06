@@ -44,7 +44,9 @@
     </script>
     </div>
 </div>
+<div class="contacts-footer">
 <?php require_once "blocks/footer.php"?>
+    </div>
 </body>
 
 <script src="js/jquery.js"></script>
