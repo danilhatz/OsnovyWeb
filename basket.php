@@ -28,7 +28,7 @@ $items = unserialize($_COOKIE['basket']); ?>
         <p><?php echo $item['description'] ?></p>
 
         <p>
-            <a href="shopingcard.php?category_id=<?php echo $categoryId ?>&item_id=<?php echo $itemId ?>&action=add"
+            <a href="shopingcard.php?action=delete"
                class="btn btn-primary">Delete from basket</a>
     </div>
     <div class="columns large-3">
