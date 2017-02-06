@@ -13,15 +13,15 @@ $email = $_POST['email'];
 $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")
     ->setUsername('emeblef')
     ->setPassword('bSAzq3553');
-$body = 'Client' . $name . $last . 'want to buy this items:'. "\n";
+$body = 'Client ' . $name ." " . $last . ' want to buy this items:'. "\n";
 foreach ($items as $item){
     $body.=$item['title']. "\n";
 }
-$body.="You can contact with him using his phone number" . $phone;
+$body.="You can contact with him using his phone number " . $phone;
 
 $mailer = Swift_Mailer::newInstance($transport);
 
-$message = Swift_Message::newInstance('Test Subject')
+$message = Swift_Message::newInstance('New client')
     ->setFrom(array('emeblef@gmail.com' => 'eMeblef'))
     ->setTo(array('danilhatz@gmail.com'))
     ->setBody($body);

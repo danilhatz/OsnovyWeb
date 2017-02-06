@@ -9,20 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>eMeblef: about us</title>
-
-    <!-- Bootstrap Core CSS -->
+    <title>Item page</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
     <link href="../css/heroic-features.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 </head>
 
@@ -38,7 +27,7 @@ $categories = require __DIR__ . '/../goods/categories.php';
         <?php $categoryId = intval($_GET["category_id"]);
         $itemId = intval($_GET["item_id"]);
         $itemInfo  = $items[$categoryId][$itemId]?>
-        <div class="columns large-8">
+        <div class="col-md-6">
             <div class="thumbnail">
                 <img class="items" src="<?php echo $itemInfo['img'] ?>">
                 </div>
@@ -49,6 +38,8 @@ $categories = require __DIR__ . '/../goods/categories.php';
 
                     <p><?php echo $itemInfo['description']?></p>
 
+                    <p><?php echo $itemInfo['price']?></p>
+
                     <p>
                         <a href="../shopingcard.php?category_id=<?php echo $categoryId?>&item_id=<?php echo $itemId?>&action=add" class="btn btn-primary">Add to basket</a>
                     </p>
@@ -56,12 +47,11 @@ $categories = require __DIR__ . '/../goods/categories.php';
             </div>
         </div>
     </div>
+<div class="item-footer">
+<?php require_once "../blocks/footer.php"?>
+    </div>
 </body>
 <!-- Footer -->
-
-
-<?php require_once "../blocks/footer.php"?>
-
 
 <!-- jQuery -->
 <script src="../js/jquery.js"></script>

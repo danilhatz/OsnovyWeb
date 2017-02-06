@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>eMeblef: about us</title>
+    <title>Items</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/heroic-features.css" rel="stylesheet">
 </head>
@@ -25,10 +25,10 @@ $categories = require __DIR__ . '/../goods/categories.php';
         <div class="col-md-3 col-sm-6 hero-feature">
             <div class="thumbnail">
                 <img class="items" src="<?php echo $item['img']?>">
-                <div class="caption">
+                <div class="caption description">
                     <h3><?php echo $item['title']?></h3>
 
-                    <p><?php echo $item['shortDescription']?></p>
+                    <p class="shortDescription"><?php echo $item['shortDescription']?></p>
 
                     <p>
                         <a href="../goods/item.php?category_id=<?php echo $categoryId?>&item_id=<?php echo $itemId?>" class="btn btn-primary">More Info</a>
@@ -38,8 +38,11 @@ $categories = require __DIR__ . '/../goods/categories.php';
         </div>
         <?php endforeach; ?>
     </div>
+    <div class="items-footer">
+    <?php require_once "../blocks/footer.php"?>
+        </div>
 </body>
-<?php require_once "../blocks/footer.php"?>
+
 
 <script src="../js/jquery.js"></script>
 <script src="../js/bootstrap.min.js"></script>

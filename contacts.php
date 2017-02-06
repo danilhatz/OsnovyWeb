@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>eMeblef: about us</title>
+    <title>Our contacts</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/heroic-features.css" rel="stylesheet">
 </head>
@@ -16,21 +16,15 @@
 <?php require_once "blocks/header.php" ?>
 
 <div class="container">
-<p class="contacts-info">
-    Our store:
-    </p>
-
-           <style>
-            #map {
-                height: 400px;
-                width: 100%;
-            }
-        </style>
-    <h3>
+    <div class="col-md-4 contacts-info">
+        <p>Our store:
         <p>You can find our store in Budynok Mebliv near metro station Dryzbi Narodov
-            <p>Our phone number: +380639517721
-            <p>Our address: Druzhby Narodiv Blvd, 23\n
-        </p></h3>
+        <p>Our phone number: +380639517721
+        <p>Our address: Druzhby Narodiv Blvd, 23\n
+        </p>
+    </div>
+
+    <div class="col-md-8 map">
     <div id="map"></div>
     <script>
         function initMap() {
@@ -48,7 +42,7 @@
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDov4skf_9z2qRDn8v4UxICg0sLS1BQ4ho&callback=initMap">
     </script>
-
+    </div>
 </div>
 <?php require_once "blocks/footer.php"?>
 </body>
