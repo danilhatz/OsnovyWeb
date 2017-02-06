@@ -36,40 +36,29 @@ $items = unserialize($_COOKIE['basket']); ?>
         </div>
     </div>
     <?php endforeach; ?>
+    <?php if ($items){ ?>
     <div class="container checkout">
-        <p>Checkout</p>
+        <h3>Checkout</h3>
 
-        <form method="GET">
-            <input type="text" name="first-name"/>
-            <input type="text" name="last-name"/>
-            <input type="text" name="phone-number"/>
-            <input type="text" name="email"/>
+        <form method="POST" action="checkout.php">
+            <label> First Name
+                <input type="text" name="first-name"/>
+            </label>
+            <label> Last Name
+                <input type="text" name="last-name"/>
+            </label>
+            <label> Phone number
+                <input type="text" name="phone-number"/>
+            </label>
+            <label> Email address
+                <input type="text" name="email"/>
+            </label>
             <input type="submit" name="submit" value="Submit"/>
         </form>
-        <?php
-        if (isset($_REQUEST['submit'])) {
-            $name = $_GET['first-name'];
-            $last = $_GET['last-name'];
-            $phone = $_GET['phone-number'];
-            $email = $_GET['email'];
-//            echo "Submit method: " . $name . $last . $phone . $email;
-            require_once 'vendor/swiftmailer/swiftmailer/lib/swift_required.php';
-            $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")
-                ->setUsername('emeblef')
-                ->setPassword('bSAzq3553');
-
-            $mailer = Swift_Mailer::newInstance($transport);
-
-            $message = Swift_Message::newInstance('Test Subject')
-                ->setFrom(array('emeblef@gmail.com' => 'eMeblef'))
-                ->setTo(array('danilhatz@gmail.com'))
-                ->setBody('Client' .$name .$last. 'whant to buy this items:'.$item['title'] .$item['description'].
-                    "You can contact with him using his phone number" .$phone);
-            $result = $mailer->send($message);
-        }
-        ?>
-        </form>
     </div>
+    <?php } else{?>
+        <h3> Basket is empty </h3>
+    <?php }?>
 
 </div>
 

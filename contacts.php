@@ -27,7 +27,7 @@
             }
         </style>
     <h3>
-        <p>You can found our store in Budunok Mebelin near metro station Dryzbi Narodov
+        <p>You can find our store in Budynok Mebliv near metro station Dryzbi Narodov
             <p>Our phone number: +380639517721
             <p>Our address: Druzhby Narodiv Blvd, 23\n
         </p></h3>

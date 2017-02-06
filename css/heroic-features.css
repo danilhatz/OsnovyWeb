@@ -153,3 +153,13 @@ p {
 .contacts-info {
     margin-top: 50px;
 }
+
+.thankpage{
+    margin-top: 300px;
+    text-align: center
+}
+.btn.btn-primary.thankpage{
+    margin-top: 50px;
+    margin-left: 860px;
+
+}
